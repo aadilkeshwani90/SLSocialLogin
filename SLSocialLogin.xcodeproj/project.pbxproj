@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5957CCE7F1EAC435F46942C0 /* libPods-SLSocialLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C415D07CF30E7FE787DCBCDD /* libPods-SLSocialLogin.a */; };
 		B8E99E081BDF81B100436916 /* SLSocialLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E99E071BDF81B100436916 /* SLSocialLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8E99E0F1BDF81B100436916 /* SLSocialLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E041BDF81B100436916 /* SLSocialLogin.framework */; settings = {ASSET_TAGS = (); }; };
 		B8E99E141BDF81B100436916 /* SLSocialLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E99E131BDF81B100436916 /* SLSocialLoginTests.m */; };
+		B8E99E211BDF82F400436916 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E1E1BDF82F400436916 /* linkedin-sdk.framework */; settings = {ASSET_TAGS = (); }; };
+		B8E99E221BDF82F500436916 /* SocialLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E99E1F1BDF82F400436916 /* SocialLogin.h */; settings = {ASSET_TAGS = (); }; };
+		B8E99E231BDF82F500436916 /* SocialLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E99E201BDF82F400436916 /* SocialLogin.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E8C8CAAD22AF24DEAC3B099 /* Pods-SLSocialLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLSocialLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLSocialLogin/Pods-SLSocialLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		4CBEA1221C3B1DC4EEE7B936 /* Pods-SLSocialLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLSocialLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLSocialLogin/Pods-SLSocialLogin.release.xcconfig"; sourceTree = "<group>"; };
 		B8E99E041BDF81B100436916 /* SLSocialLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLSocialLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E99E071BDF81B100436916 /* SLSocialLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLSocialLogin.h; sourceTree = "<group>"; };
 		B8E99E091BDF81B100436916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8E99E0E1BDF81B100436916 /* SLSocialLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLSocialLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E99E131BDF81B100436916 /* SLSocialLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLSocialLoginTests.m; sourceTree = "<group>"; };
 		B8E99E151BDF81B100436916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E99E1E1BDF82F400436916 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
+		B8E99E1F1BDF82F400436916 /* SocialLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLogin.h; sourceTree = "<group>"; };
+		B8E99E201BDF82F400436916 /* SocialLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialLogin.m; sourceTree = "<group>"; };
+		C415D07CF30E7FE787DCBCDD /* libPods-SLSocialLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLSocialLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5957CCE7F1EAC435F46942C0 /* libPods-SLSocialLogin.a in Frameworks */,
+				B8E99E211BDF82F400436916 /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423342E3E3FB46AFFD90C2EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C415D07CF30E7FE787DCBCDD /* libPods-SLSocialLogin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B495051BF288B336C003D0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C8CAAD22AF24DEAC3B099 /* Pods-SLSocialLogin.debug.xcconfig */,
+				4CBEA1221C3B1DC4EEE7B936 /* Pods-SLSocialLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B8E99DFA1BDF81B100436916 = {
 			isa = PBXGroup;
 			children = (
 				B8E99E061BDF81B100436916 /* SLSocialLogin */,
 				B8E99E121BDF81B100436916 /* SLSocialLoginTests */,
 				B8E99E051BDF81B100436916 /* Products */,
+				6B495051BF288B336C003D0B /* Pods */,
+				423342E3E3FB46AFFD90C2EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +102,9 @@
 		B8E99E061BDF81B100436916 /* SLSocialLogin */ = {
 			isa = PBXGroup;
 			children = (
+				B8E99E1E1BDF82F400436916 /* linkedin-sdk.framework */,
+				B8E99E1F1BDF82F400436916 /* SocialLogin.h */,
+				B8E99E201BDF82F400436916 /* SocialLogin.m */,
 				B8E99E071BDF81B100436916 /* SLSocialLogin.h */,
 				B8E99E091BDF81B100436916 /* Info.plist */,
 			);
@@ -94,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8E99E081BDF81B100436916 /* SLSocialLogin.h in Headers */,
+				B8E99E221BDF82F500436916 /* SocialLogin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8E99E181BDF81B100436916 /* Build configuration list for PBXNativeTarget "SLSocialLogin" */;
 			buildPhases = (
+				67F31B29EA33679D53093F30 /* Check Pods Manifest.lock */,
 				B8E99DFF1BDF81B100436916 /* Sources */,
 				B8E99E001BDF81B100436916 /* Frameworks */,
 				B8E99E011BDF81B100436916 /* Headers */,
 				B8E99E021BDF81B100436916 /* Resources */,
+				9F8E9F65F958B5C771C69CCF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,11 +225,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67F31B29EA33679D53093F30 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8E9F65F958B5C771C69CCF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLSocialLogin/Pods-SLSocialLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8E99DFF1BDF81B100436916 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E99E231BDF82F500436916 /* SocialLogin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,11 +376,16 @@
 		};
 		B8E99E191BDF81B100436916 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8C8CAAD22AF24DEAC3B099 /* Pods-SLSocialLogin.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SLSocialLogin",
+				);
 				INFOPLIST_FILE = SLSocialLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -321,11 +397,16 @@
 		};
 		B8E99E1A1BDF81B100436916 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBEA1221C3B1DC4EEE7B936 /* Pods-SLSocialLogin.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SLSocialLogin",
+				);
 				INFOPLIST_FILE = SLSocialLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +455,7 @@
 				B8E99E1A1BDF81B100436916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8E99E1B1BDF81B100436916 /* Build configuration list for PBXNativeTarget "SLSocialLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -382,6 +464,7 @@
 				B8E99E1D1BDF81B100436916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
