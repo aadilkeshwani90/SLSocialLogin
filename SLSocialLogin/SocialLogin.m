@@ -374,112 +374,112 @@
 }
 
 /***************************** Google Functions ***********************************/
--(void)loginWithGoogle:(google_completion_block)completion{
-    if(![self isGoogleLoggedIn])
-    {
-        GPPSignIn *signIn = [GPPSignIn sharedInstance];
-        signIn.shouldFetchGooglePlusUser = YES;
-
-        signIn.clientID = self.strGoogleId;
-        
-        // Uncomment one of these two statements for the scope you chose in the previous step
-       // signIn.scopes = @[ kGTLAuthScopePlusLogin ];  // "https://www.googleapis.com/auth/plus.login" scope
-        signIn.scopes = @[ kGTLAuthScopePlusLogin, @"profile" ];            // "profile" scope
-        
-        // Optional: declare signIn.actions, see "app activities"
-        signIn.delegate = self;
-        [signIn authenticate];
-        self.objGoogleBlock=completion;
-        
-    }
-    else{
-        if(completion)
-        {
-            NSError *error;
-            completion(@"",error,@"User is Already Logged in",-1);
-        }
-    }
-}
-- (void)finishedWithAuth: (GTMOAuth2Authentication *)auth
-                   error: (NSError *) error {
-    if(error)
-    {
-        self.objGoogleBlock(@"",error,@"User is Already Logged in",-1);
-        //Getting Google Plus Profile Information
-        
-        
-    }
-    else{
-        GTLServicePlus* plusService = [[GTLServicePlus alloc] init ];
-        plusService.retryEnabled = YES;
-        [plusService setAuthorizer:[[GPPSignIn sharedInstance] authentication]];
-        
-        GTLQueryPlus *query = [GTLQueryPlus queryForPeopleGetWithUserId:@"me"];
-        
-        [plusService executeQuery:query
-                completionHandler:^(GTLServiceTicket *ticket,
-                                    GTLPlusPerson *person,
-                                    NSError *error) {
-                    if (error) {
-                        GTMLoggerError(@"Error: %@", error);
-                    } else {
-                        // Retrieve the display name and "about me" text
-//                        NSString *description = [NSString stringWithFormat:
-//                                                 @"%@\n%@", person.displayName,
-//                                                 person.aboutMe];
-                        self.objGoogleBlock(person,nil,@"User Logged in success",1);
-                    }
-                }];
-        
-    }
-    NSLog(@"Received error %@ and auth object %@",error, auth);
-}
--(void)logoutGoogle{
-    [[GPPSignIn sharedInstance] signOut];
-}
--(BOOL)isGoogleLoggedIn
-{
-    if ([[GPPSignIn sharedInstance] authentication]) {
-        // The user is signed in.
-        return YES;
-        // Perform other actions here, such as showing a sign-out button
-    } else {
-        return  NO;
-        // Perform other actions here
-    }
-}
--(void)postToGooglePlus{
-        id<GPPNativeShareBuilder> shareBuilder = [[GPPShare sharedInstance] nativeShareDialog];
-        [shareBuilder open];
-
-}
--(void)peopleListGooglePlus:(google_completion_block) completion{
-    GTLServicePlus* plusService = [[GTLServicePlus alloc] init ];
-    plusService.retryEnabled = YES;
-    [plusService setAuthorizer:[[GPPSignIn sharedInstance] authentication]];
-    
-    GTLQueryPlus *query =
-    [GTLQueryPlus queryForPeopleListWithUserId:@"me"
-                                    collection:kGTLPlusCollectionVisible];
-    [plusService executeQuery:query
-            completionHandler:^(GTLServiceTicket *ticket,
-                                GTLPlusPeopleFeed *peopleFeed,
-                                NSError *error) {
-                if (error) {
-                    GTMLoggerError(@"Error: %@", error);
-                    if(completion)
-                    {
-                        completion(@"",error,@"Error Getting People List",-1);
-                    }
-                } else {
-                    // Get an array of people from GTLPlusPeopleFeed
-                    NSArray* peopleList = peopleFeed.items;
-                    if(completion)
-                    {
-                        completion(peopleList,nil,@"Getting People List Success",1);
-                    }
-                }
-            }];}
+//-(void)loginWithGoogle:(google_completion_block)completion{
+//    if(![self isGoogleLoggedIn])
+//    {
+//        GPPSignIn *signIn = [GPPSignIn sharedInstance];
+//        signIn.shouldFetchGooglePlusUser = YES;
+//
+//        signIn.clientID = self.strGoogleId;
+//        
+//        // Uncomment one of these two statements for the scope you chose in the previous step
+//       // signIn.scopes = @[ kGTLAuthScopePlusLogin ];  // "https://www.googleapis.com/auth/plus.login" scope
+//        signIn.scopes = @[ kGTLAuthScopePlusLogin, @"profile" ];            // "profile" scope
+//        
+//        // Optional: declare signIn.actions, see "app activities"
+//        signIn.delegate = self;
+//        [signIn authenticate];
+//        self.objGoogleBlock=completion;
+//        
+//    }
+//    else{
+//        if(completion)
+//        {
+//            NSError *error;
+//            completion(@"",error,@"User is Already Logged in",-1);
+//        }
+//    }
+//}
+//- (void)finishedWithAuth: (GTMOAuth2Authentication *)auth
+//                   error: (NSError *) error {
+//    if(error)
+//    {
+//        self.objGoogleBlock(@"",error,@"User is Already Logged in",-1);
+//        //Getting Google Plus Profile Information
+//        
+//        
+//    }
+//    else{
+//        GTLServicePlus* plusService = [[GTLServicePlus alloc] init ];
+//        plusService.retryEnabled = YES;
+//        [plusService setAuthorizer:[[GPPSignIn sharedInstance] authentication]];
+//        
+//        GTLQueryPlus *query = [GTLQueryPlus queryForPeopleGetWithUserId:@"me"];
+//        
+//        [plusService executeQuery:query
+//                completionHandler:^(GTLServiceTicket *ticket,
+//                                    GTLPlusPerson *person,
+//                                    NSError *error) {
+//                    if (error) {
+//                        GTMLoggerError(@"Error: %@", error);
+//                    } else {
+//                        // Retrieve the display name and "about me" text
+////                        NSString *description = [NSString stringWithFormat:
+////                                                 @"%@\n%@", person.displayName,
+////                                                 person.aboutMe];
+//                        self.objGoogleBlock(person,nil,@"User Logged in success",1);
+//                    }
+//                }];
+//        
+//    }
+//    NSLog(@"Received error %@ and auth object %@",error, auth);
+//}
+//-(void)logoutGoogle{
+//    [[GPPSignIn sharedInstance] signOut];
+//}
+//-(BOOL)isGoogleLoggedIn
+//{
+//    if ([[GPPSignIn sharedInstance] authentication]) {
+//        // The user is signed in.
+//        return YES;
+//        // Perform other actions here, such as showing a sign-out button
+//    } else {
+//        return  NO;
+//        // Perform other actions here
+//    }
+//}
+//-(void)postToGooglePlus{
+//        id<GPPNativeShareBuilder> shareBuilder = [[GPPShare sharedInstance] nativeShareDialog];
+//        [shareBuilder open];
+//
+//}
+//-(void)peopleListGooglePlus:(google_completion_block) completion{
+//    GTLServicePlus* plusService = [[GTLServicePlus alloc] init ];
+//    plusService.retryEnabled = YES;
+//    [plusService setAuthorizer:[[GPPSignIn sharedInstance] authentication]];
+//    
+//    GTLQueryPlus *query =
+//    [GTLQueryPlus queryForPeopleListWithUserId:@"me"
+//                                    collection:kGTLPlusCollectionVisible];
+//    [plusService executeQuery:query
+//            completionHandler:^(GTLServiceTicket *ticket,
+//                                GTLPlusPeopleFeed *peopleFeed,
+//                                NSError *error) {
+//                if (error) {
+//                    GTMLoggerError(@"Error: %@", error);
+//                    if(completion)
+//                    {
+//                        completion(@"",error,@"Error Getting People List",-1);
+//                    }
+//                } else {
+//                    // Get an array of people from GTLPlusPeopleFeed
+//                    NSArray* peopleList = peopleFeed.items;
+//                    if(completion)
+//                    {
+//                        completion(peopleList,nil,@"Getting People List Success",1);
+//                    }
+//                }
+//            }];}
 
 /***************************** LinkedInn Functions ***********************************/
 -(void)loginWithLinkedInn:(linkedIn_completion_block)completion

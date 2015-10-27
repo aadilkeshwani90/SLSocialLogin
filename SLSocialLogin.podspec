@@ -16,17 +16,10 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SLSocialLogin"
-  s.version      = "0.0.1"
-  s.summary      = "Hey Folks, SLSocialLogin is the new Library to integrate Facebook Login, Twitter Login, LinkedInn Login, Instagram Login and Google Plus Login with a very simple Configuration"
+  s.version      = "0.1.1"
+  s.summary      = "Hey Folks, SLSocialLogin is the new Library to integrate Facebook , Twitter, LinkedInn, Instagram Login."
 
-  s.description  = <<-DESC
-                   A longer description of SLSocialLogin in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
-                   DESC
+  s.description  = "Hey Folks, SLSocialLogin is the new Library to integrate Facebook Login, Twitter Login, LinkedInn Login, Instagram Login and Google Plus Login with a very simple Configuration"
 
   s.homepage     = "http://www.icoders.in"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.icoders.in/screenshots_2.gif"
@@ -39,28 +32,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-# s.license      = { :type => "MIT", :file => "The MIT License (MIT)
+s.license      = "LICENSE"
 
-Copyright (c) 2015 Aadil Keshwani
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE." }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -85,8 +58,8 @@ SOFTWARE." }
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
-
+    s.platform     = :ios, "7.0"
+#  s.libraries    =  "GooglePlus" ,
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
@@ -99,7 +72,7 @@ SOFTWARE." }
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/aadilkeshwani90/SLSocialLogin.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/aadilkeshwani90/SLSocialLogin.git", :tag => "0.1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -109,8 +82,7 @@ SOFTWARE." }
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = 'SLSocialLogin/*.{h,m}'
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -124,7 +96,7 @@ SOFTWARE." }
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+   s.resource  = "GooglePlus.framework"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -137,7 +109,7 @@ SOFTWARE." }
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   s.frameworks = "linkedin-sdk", "UIKit", "SystemConfiguration", "Security", "MediaPlayer", "CoreText", "CoreGraphics", "CoreMotion", "CoreLocation", "Foundation", "AssetsLibrary", "AddressBook"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -151,7 +123,12 @@ SOFTWARE." }
 
   # s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+# s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/SLSocialLogin" }
   # s.dependency "JSONKit", "~> 1.4"
-
+    s.dependency "FBSDKCoreKit"
+    s.dependency 'FBSDKLoginKit'
+    s.dependency 'FBSDKShareKit'
+    s.dependency 'InstagramKit'
+    s.dependency 'MBProgressHUD'
+    s.dependency 'FHSTwitterEngine'
 end

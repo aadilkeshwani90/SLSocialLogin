@@ -50,9 +50,9 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <MBProgressHUD.h>
 #import <FHSTwitterEngine.h>
-#import <GooglePlus/GooglePlus.h>
-#import <GoogleOpenSource/GoogleOpenSource.h>
-#import <GoogleOpenSource/GTLServicePlus.h>
+//#import <GooglePlus/GooglePlus.h>
+//#import <GoogleOpenSource/GoogleOpenSource.h>
+//#import <GoogleOpenSource/GTLServicePlus.h>
 #import <linkedin-sdk/LISDK.h>
 #import <InstagramKit.h>
 typedef enum
@@ -70,7 +70,8 @@ typedef void(^facebookDetail_completion_block)(id result,NSError *error, NSStrin
 typedef void(^google_completion_block) (id result,NSError *error, NSString *msg, int status);
 typedef void(^linkedIn_completion_block) (id result, NSError *error, NSString *msg, int status);
 typedef void(^instagram_completion_block) (id result, NSError *error, NSString *msg, int status);
-@interface SocialLogin : NSObject <FHSTwitterEngineAccessTokenDelegate,GPPSignInDelegate,UIWebViewDelegate>
+//@interface SocialLogin : NSObject <FHSTwitterEngineAccessTokenDelegate,GPPSignInDelegate,UIWebViewDelegate>
+@interface SocialLogin : NSObject <FHSTwitterEngineAccessTokenDelegate,UIWebViewDelegate>
 @property (nonatomic,strong) NSMutableString *strFBAppId;
 @property (nonatomic,strong) NSMutableString *strFBSecretKey;
 @property (nonatomic,strong) NSMutableString *strGoogleId;

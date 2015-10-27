@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "870BB2907DCC2B879AF4C9FE"
+               BlueprintIdentifier = "4AD249EA87B138BD322D6A4F"
                BuildableName = "libPods-SLSocialLogin.a"
                BlueprintName = "Pods-SLSocialLogin"
                ReferencedContainer = "container:Pods.xcodeproj">

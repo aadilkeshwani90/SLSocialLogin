@@ -14,6 +14,31 @@
 		B8E99E211BDF82F400436916 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E1E1BDF82F400436916 /* linkedin-sdk.framework */; settings = {ASSET_TAGS = (); }; };
 		B8E99E221BDF82F500436916 /* SocialLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E99E1F1BDF82F400436916 /* SocialLogin.h */; settings = {ASSET_TAGS = (); }; };
 		B8E99E231BDF82F500436916 /* SocialLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E99E201BDF82F400436916 /* SocialLogin.m */; settings = {ASSET_TAGS = (); }; };
+		B8E99E6F1BDF957300436916 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E691BDF94A400436916 /* GooglePlus.framework */; };
+		B8E99E711BDF95BB00436916 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E701BDF95BB00436916 /* AddressBook.framework */; };
+		B8E99E721BDF95CB00436916 /* GooglePlus.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E6B1BDF94AD00436916 /* GooglePlus.bundle */; };
+		B8E99E731BDF95DE00436916 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E6D1BDF94BC00436916 /* GoogleOpenSource.framework */; };
+		B8E99E751BDF961900436916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E741BDF961900436916 /* UIKit.framework */; };
+		B8E99E771BDF96F000436916 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E761BDF96F000436916 /* libAFNetworking.a */; };
+		B8E99E791BDF96F500436916 /* libFBSDKCoreKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E781BDF96F500436916 /* libFBSDKCoreKit.a */; };
+		B8E99E7B1BDF96F800436916 /* libFBSDKLoginKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E7A1BDF96F800436916 /* libFBSDKLoginKit.a */; };
+		B8E99E7D1BDF96FB00436916 /* libFBSDKShareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E7C1BDF96FB00436916 /* libFBSDKShareKit.a */; };
+		B8E99E7F1BDF96FF00436916 /* libFHSTwitterEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E7E1BDF96FF00436916 /* libFHSTwitterEngine.a */; };
+		B8E99E811BDF970200436916 /* libInstagramKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E801BDF970200436916 /* libInstagramKit.a */; };
+		B8E99E831BDF972000436916 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E821BDF972000436916 /* SystemConfiguration.framework */; };
+		B8E99E851BDF972C00436916 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E841BDF972C00436916 /* MediaPlayer.framework */; };
+		B8E99E871BDF973200436916 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E861BDF973200436916 /* CoreText.framework */; };
+		B8E99E891BDF973800436916 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E881BDF973800436916 /* Security.framework */; };
+		B8E99E8B1BDF974700436916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E8A1BDF974700436916 /* Foundation.framework */; };
+		B8E99E8D1BDF974C00436916 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E8C1BDF974C00436916 /* CoreGraphics.framework */; };
+		B8E99E8F1BDF975F00436916 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E8E1BDF975F00436916 /* CoreMotion.framework */; };
+		B8E99E911BDF976400436916 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E901BDF976400436916 /* CoreLocation.framework */; };
+		B8E99E931BDF977300436916 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E921BDF977300436916 /* AssetsLibrary.framework */; };
+		B8E99E941BDF9A2000436916 /* GooglePlus.framework in Resources */ = {isa = PBXBuildFile; fileRef = B8E99E691BDF94A400436916 /* GooglePlus.framework */; };
+		B8E99E971BDF9A3300436916 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E951BDF9A3300436916 /* GoogleOpenSource.framework */; settings = {ASSET_TAGS = (); }; };
+		B8E99E981BDF9A3300436916 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E99E961BDF9A3300436916 /* GooglePlus.framework */; settings = {ASSET_TAGS = (); }; };
+		B8E99E991BDF9A7700436916 /* GoogleOpenSource.framework in Resources */ = {isa = PBXBuildFile; fileRef = B8E99E951BDF9A3300436916 /* GoogleOpenSource.framework */; };
+		B8E99E9A1BDF9A8200436916 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E99E6B1BDF94AD00436916 /* GooglePlus.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +63,28 @@
 		B8E99E1E1BDF82F400436916 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
 		B8E99E1F1BDF82F400436916 /* SocialLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLogin.h; sourceTree = "<group>"; };
 		B8E99E201BDF82F400436916 /* SocialLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialLogin.m; sourceTree = "<group>"; };
+		B8E99E691BDF94A400436916 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = SLSocialLogin/GooglePlus.framework; sourceTree = "<group>"; };
+		B8E99E6B1BDF94AD00436916 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = SLSocialLogin/GooglePlus.bundle; sourceTree = "<group>"; };
+		B8E99E6D1BDF94BC00436916 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = SLSocialLogin/GoogleOpenSource.framework; sourceTree = "<group>"; };
+		B8E99E701BDF95BB00436916 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B8E99E741BDF961900436916 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B8E99E761BDF96F000436916 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		B8E99E781BDF96F500436916 /* libFBSDKCoreKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFBSDKCoreKit.a; path = "Pods/../build/Debug-iphoneos/libFBSDKCoreKit.a"; sourceTree = "<group>"; };
+		B8E99E7A1BDF96F800436916 /* libFBSDKLoginKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFBSDKLoginKit.a; path = "Pods/../build/Debug-iphoneos/libFBSDKLoginKit.a"; sourceTree = "<group>"; };
+		B8E99E7C1BDF96FB00436916 /* libFBSDKShareKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFBSDKShareKit.a; path = "Pods/../build/Debug-iphoneos/libFBSDKShareKit.a"; sourceTree = "<group>"; };
+		B8E99E7E1BDF96FF00436916 /* libFHSTwitterEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFHSTwitterEngine.a; path = "Pods/../build/Debug-iphoneos/libFHSTwitterEngine.a"; sourceTree = "<group>"; };
+		B8E99E801BDF970200436916 /* libInstagramKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInstagramKit.a; path = "Pods/../build/Debug-iphoneos/libInstagramKit.a"; sourceTree = "<group>"; };
+		B8E99E821BDF972000436916 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B8E99E841BDF972C00436916 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B8E99E861BDF973200436916 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B8E99E881BDF973800436916 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B8E99E8A1BDF974700436916 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B8E99E8C1BDF974C00436916 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B8E99E8E1BDF975F00436916 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B8E99E901BDF976400436916 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B8E99E921BDF977300436916 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B8E99E951BDF9A3300436916 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		B8E99E961BDF9A3300436916 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		C415D07CF30E7FE787DCBCDD /* libPods-SLSocialLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLSocialLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +93,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E99E931BDF977300436916 /* AssetsLibrary.framework in Frameworks */,
+				B8E99E981BDF9A3300436916 /* GooglePlus.framework in Frameworks */,
+				B8E99E911BDF976400436916 /* CoreLocation.framework in Frameworks */,
+				B8E99E8F1BDF975F00436916 /* CoreMotion.framework in Frameworks */,
+				B8E99E8D1BDF974C00436916 /* CoreGraphics.framework in Frameworks */,
+				B8E99E8B1BDF974700436916 /* Foundation.framework in Frameworks */,
+				B8E99E971BDF9A3300436916 /* GoogleOpenSource.framework in Frameworks */,
+				B8E99E891BDF973800436916 /* Security.framework in Frameworks */,
+				B8E99E871BDF973200436916 /* CoreText.framework in Frameworks */,
+				B8E99E851BDF972C00436916 /* MediaPlayer.framework in Frameworks */,
+				B8E99E831BDF972000436916 /* SystemConfiguration.framework in Frameworks */,
+				B8E99E811BDF970200436916 /* libInstagramKit.a in Frameworks */,
+				B8E99E7F1BDF96FF00436916 /* libFHSTwitterEngine.a in Frameworks */,
+				B8E99E7D1BDF96FB00436916 /* libFBSDKShareKit.a in Frameworks */,
+				B8E99E7B1BDF96F800436916 /* libFBSDKLoginKit.a in Frameworks */,
+				B8E99E791BDF96F500436916 /* libFBSDKCoreKit.a in Frameworks */,
+				B8E99E771BDF96F000436916 /* libAFNetworking.a in Frameworks */,
+				B8E99E751BDF961900436916 /* UIKit.framework in Frameworks */,
+				B8E99E731BDF95DE00436916 /* GoogleOpenSource.framework in Frameworks */,
+				B8E99E721BDF95CB00436916 /* GooglePlus.bundle in Frameworks */,
+				B8E99E711BDF95BB00436916 /* AddressBook.framework in Frameworks */,
+				B8E99E6F1BDF957300436916 /* GooglePlus.framework in Frameworks */,
 				5957CCE7F1EAC435F46942C0 /* libPods-SLSocialLogin.a in Frameworks */,
 				B8E99E211BDF82F400436916 /* linkedin-sdk.framework in Frameworks */,
 			);
@@ -65,6 +134,26 @@
 		423342E3E3FB46AFFD90C2EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8E99E921BDF977300436916 /* AssetsLibrary.framework */,
+				B8E99E901BDF976400436916 /* CoreLocation.framework */,
+				B8E99E8E1BDF975F00436916 /* CoreMotion.framework */,
+				B8E99E8C1BDF974C00436916 /* CoreGraphics.framework */,
+				B8E99E8A1BDF974700436916 /* Foundation.framework */,
+				B8E99E881BDF973800436916 /* Security.framework */,
+				B8E99E861BDF973200436916 /* CoreText.framework */,
+				B8E99E841BDF972C00436916 /* MediaPlayer.framework */,
+				B8E99E821BDF972000436916 /* SystemConfiguration.framework */,
+				B8E99E801BDF970200436916 /* libInstagramKit.a */,
+				B8E99E7E1BDF96FF00436916 /* libFHSTwitterEngine.a */,
+				B8E99E7C1BDF96FB00436916 /* libFBSDKShareKit.a */,
+				B8E99E7A1BDF96F800436916 /* libFBSDKLoginKit.a */,
+				B8E99E781BDF96F500436916 /* libFBSDKCoreKit.a */,
+				B8E99E761BDF96F000436916 /* libAFNetworking.a */,
+				B8E99E741BDF961900436916 /* UIKit.framework */,
+				B8E99E701BDF95BB00436916 /* AddressBook.framework */,
+				B8E99E6D1BDF94BC00436916 /* GoogleOpenSource.framework */,
+				B8E99E6B1BDF94AD00436916 /* GooglePlus.bundle */,
+				B8E99E691BDF94A400436916 /* GooglePlus.framework */,
 				C415D07CF30E7FE787DCBCDD /* libPods-SLSocialLogin.a */,
 			);
 			name = Frameworks;
@@ -102,6 +191,8 @@
 		B8E99E061BDF81B100436916 /* SLSocialLogin */ = {
 			isa = PBXGroup;
 			children = (
+				B8E99E951BDF9A3300436916 /* GoogleOpenSource.framework */,
+				B8E99E961BDF9A3300436916 /* GooglePlus.framework */,
 				B8E99E1E1BDF82F400436916 /* linkedin-sdk.framework */,
 				B8E99E1F1BDF82F400436916 /* SocialLogin.h */,
 				B8E99E201BDF82F400436916 /* SocialLogin.m */,
@@ -213,6 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E99E9A1BDF9A8200436916 /* GooglePlus.bundle in Resources */,
+				B8E99E991BDF9A7700436916 /* GoogleOpenSource.framework in Resources */,
+				B8E99E941BDF9A2000436916 /* GooglePlus.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +483,10 @@
 				INFOPLIST_FILE = SLSocialLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaptechsolutions.SLSocialLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -410,6 +508,10 @@
 				INFOPLIST_FILE = SLSocialLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaptechsolutions.SLSocialLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
