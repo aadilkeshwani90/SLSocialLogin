@@ -109,7 +109,7 @@ s.license      = "LICENSE"
   #
 
   # s.framework  = "SomeFramework"
-   s.frameworks = "linkedin-sdk", "UIKit", "SystemConfiguration", "Security", "MediaPlayer", "CoreText", "CoreGraphics", "CoreMotion", "CoreLocation", "Foundation", "AssetsLibrary", "AddressBook"
+   s.frameworks = "GooglePlus", "linkedin-sdk", "GoogleOpenSource", "UIKit", "SystemConfiguration", "Security", "MediaPlayer", "CoreText", "CoreGraphics", "CoreMotion", "CoreLocation", "Foundation", "AssetsLibrary", "AddressBook"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
